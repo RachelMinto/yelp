@@ -1,14 +1,15 @@
 Plan
 - [x] Create ERD:
   - [x] User, Business, Review
-- [ ] Create design mockups of pages
+- [x] Create design mockups of pages
   - [x] List of businesses page
-  - [ ] Create a business form
+  - [x] Create a business form
   - [x] User register page
   - [x] User login page
-  - [ ] List of recent reviews
+  - [x] List of recent reviews
   - [x] Create a business review
-  - [ ] Other user profile page including that user's reviews
+  - [x] Other user profile page including that user's reviews
+- [ ] Set up twitter bootstrap, rails version and ruby version 
 - [ ] Create UI files:
   - [ ] List of businesses page
   - [ ] Create a business form
@@ -18,7 +19,7 @@ Plan
   - [ ] Create a business review
   - [ ] Other user profile page including that user's reviews
 - [ ] Set up postgres
-- [ ] Set up twitter bootstrap
+
 - [ ] root_path is list of businesses
   - [ ] create TDD for business controller and model
   - [ ] create route to businesses#index
