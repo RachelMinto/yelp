@@ -1,0 +1,57 @@
+Plan
+- [x] Create ERD:
+  - [x] User, Business, Review
+- [ ] Create design mockups of pages
+  - [x] List of businesses page
+  - [ ] Create a business form
+  - [x] User register page
+  - [x] User login page
+  - [ ] List of recent reviews
+  - [x] Create a business review
+  - [ ] Other user profile page including that user's reviews
+- [ ] Create UI files:
+  - [ ] List of businesses page
+  - [ ] Create a business form
+  - [ ] User register page
+  - [ ] User login page
+  - [ ] List of recent reviews
+  - [ ] Create a business review
+  - [ ] Other user profile page including that user's reviews
+- [ ] Set up postgres
+- [ ] Set up twitter bootstrap
+- [ ] root_path is list of businesses
+  - [ ] create TDD for business controller and model
+  - [ ] create route to businesses#index
+  - [ ] Implement root_path
+  - [ ] Create slug for business#show
+- [ ] Businesses#new
+  - [ ] create TDD for business controller #new
+  - [ ] Generate migration for businesses table
+  - [ ] create routes to businesses #new
+- [ ] Businesses#create
+  - [ ] create TDD for business controller #create
+  - [ ] create routes to businesses #create
+- [ ] Users#new
+  - [ ] create TDD for users controller #new
+  - [ ] create routes to users #new as #register
+- [ ] Users#create
+  - [ ] create TDD for users controller #create
+  - [ ] create route to users #create
+- [ ] Sessions#new
+  - [ ] create TDD for sessions controller #new
+  - [ ] create route to sessions #new
+- [ ] Session#create
+  - [ ] create TDD for sessions controller #create
+  - [ ] create route to sessions #create
+- [ ] Users#show
+  - [ ] create TDD for users controller #show
+  - [ ] create route to users #show
+- [ ] Create shared_example for requires_authenticated_user 
+  - [ ] require_authenticated_user to post a review
+  - [ ] require_authenticated_user to create a business
+- [ ] Install capybara gem
+- [ ] Create integrated test for registering and sigining in a user
+- [ ] Created integrated test for viewing another user's profile page
+- [ ] Add pagination for business index page
+- [ ] Add tags to businesses?
+- [ ] Add photos to reviews?
