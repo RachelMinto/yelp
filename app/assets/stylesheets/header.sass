@@ -1,4 +1,5 @@
 section#top-header
+  margin: 0
   background: #d32323 url(https://s3-media2.fl.yelpcdn.com/assets/srv0/yelp_styleguide/15ee41b0c3b2/assets/img/structural/header_stars@2x.png) no-repeat center
   background-size: 1135px auto, 100%
   .main-header_wrapper
@@ -6,19 +7,22 @@ section#top-header
     height: 60px
     .parent-container
       height: 100%
-      padding: 0 158px
       form
-        margin-left: 15px
         display: inline-block
         input.form-control
-          width: 690px
+          width: 528px
         span.input-group-btn
           .btn
             background: #bd1f1f
       .btn.white
         font-weight: bold
-        background: #bd1f1f
-        margin-left: 15px        
+        background: #bd1f1f  
 section#sub-header
   background: #bd1f1f
   height: 27px
+  .white.col-md-offset-9
+    width: 101px
+    text-align: center
+    line-height: 27px
+    &:hover
+      background: rgba(51,51,51,0.3)
