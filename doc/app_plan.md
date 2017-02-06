@@ -11,6 +11,7 @@ Plan
   - [x] Other user profile page including that user's reviews
 - [x] Set up twitter bootstrap, rails version and ruby version 
 - [ ] Create UI files:
+  - [x] shared header
   - [ ] List of businesses page
   - [ ] Create a business form
   - [ ] User register page
