@@ -1,6 +1,41 @@
 %section.businesses_index.container
-  .row
-    .company_info
-      %h3 The Green Briar
-      .muted 96 reviews
-    .company_contact
+  .row.business_card
+    .company_info.col-md-8
+      %h3.text-uppercase The Green Briar
+      .rated
+        .btn-group(role="group")
+          %button.button.btn-default.glyphicon.glyphicon-star.active(type="button")
+          %button.button.btn-default.glyphicon.glyphicon-star.active(type="button")
+          %button.button.btn-default.glyphicon.glyphicon-star(type="button")
+          %button.button.btn-default.glyphicon.glyphicon-star(type="button")
+          %button.button.btn-default.glyphicon.glyphicon-star(type="button")      
+        %span.muted 96 reviews
+      .review-preview
+        This is an awesome restaurant for a romantic dinner. I came here the other night and I thought it was ... read more
+    .company_contact.col-md-4.address
+      1400 Beacon St.
+      %br/
+      Boston, MA 02215
+      %br/      
+      740-230-1443
+  %hr
+  .row.business_card
+    .company_info.col-md-8
+      %h3.text-uppercase The Green Briar
+      .rated
+        .btn-group(role="group")
+          %button.button.btn-default.glyphicon.glyphicon-star.active(type="button")
+          %button.button.btn-default.glyphicon.glyphicon-star.active(type="button")
+          %button.button.btn-default.glyphicon.glyphicon-star.active(type="button")
+          %button.button.btn-default.glyphicon.glyphicon-star.active(type="button")
+          %button.button.btn-default.glyphicon.glyphicon-star(type="button")      
+        %span.muted 96 reviews
+      .review-preview
+        This is an awesome restaurant for a romantic dinner. I came here the other night and I thought it was ... read more
+    .company_contact.col-md-4.address
+      1400 Beacon St.
+      %br/
+      Boston, MA 02215
+      %br/      
+      740-230-1443
+  %hr  
