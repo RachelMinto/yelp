@@ -9,7 +9,7 @@ Plan
   - [x] List of recent reviews
   - [x] Create a business review
   - [x] Other user profile page including that user's reviews
-- [ ] Set up twitter bootstrap, rails version and ruby version 
+- [x] Set up twitter bootstrap, rails version and ruby version 
 - [ ] Create UI files:
   - [ ] List of businesses page
   - [ ] Create a business form
