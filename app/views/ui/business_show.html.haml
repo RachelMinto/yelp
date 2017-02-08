@@ -29,33 +29,96 @@
       Medfield, MA 02231
       %br/      
       740-230-1441
-%section.business_reviews
-  .reviews
-    .row.col-md-9
-      = image_tag '/images/profile_1.jpg'
-      .reviewer-info
-        = link_to 'Jen. Y', '#'
+%section.business_reviews.row
+  .reviews.col-md-9
+    .row.review-card
+      %img.profile-pic.col-md-1(src="/images/profile_1.jpg")
+      .reviewer-info.col-md-3
+        = link_to 'Jen Y.', '#'
+        %br/        
         Boston, MA
         .muted 230 Reviews
-      .btn-group.star-rating.small-rating(data-toggle="buttons")
-        %label.btn.btn-primary.disabled(for="rating-5")      
-          %input(type="radio" name="rating-5" id="rating-5")
-          %span.glyphicon.glyphicon-star
-        %label.btn.btn-primary.active.disabled(for="rating-4")        
-          %input(type="radio" name="rating-4" id="rating-4")
-          %span.glyphicon.glyphicon-star
-        %label.btn.btn-primary.disabled(for="rating-3")          
-          %input(type="radio" name="rating-3" id="rating-3")
-          %span.glyphicon.glyphicon-star
-        %label.btn.btn-primary.disabled(for="rating-2")          
-          %input(type="radio" name="rating-2" id="rating-2")
-          %span.glyphicon.glyphicon-star
-        %label.btn.btn-primary.disabled(for="rating-1")          
-          %input(type="radio" name="rating-1" id="rating-1")
-          %span.glyphicon.glyphicon-star
-      %span.muted 02/20/2010
-      .review-preview
-        I love Tasha's bubble tea! It makes my day. Sometimes I come by here after work and I just can't decide on which flavor to get. And then I have to decide boba, or not boba. It's just crazy! ... read more
-
+      .user-rating.col-md-7
+        .btn-group.star-rating.small-rating(data-toggle="buttons")
+          %label.btn.btn-primary.disabled(for="rating-5")      
+            %input(type="radio" name="rating-5" id="rating-5")
+            %span.glyphicon.glyphicon-star
+          %label.btn.btn-primary.active.disabled(for="rating-4")        
+            %input(type="radio" name="rating-4" id="rating-4")
+            %span.glyphicon.glyphicon-star
+          %label.btn.btn-primary.disabled(for="rating-3")          
+            %input(type="radio" name="rating-3" id="rating-3")
+            %span.glyphicon.glyphicon-star
+          %label.btn.btn-primary.disabled(for="rating-2")          
+            %input(type="radio" name="rating-2" id="rating-2")
+            %span.glyphicon.glyphicon-star
+          %label.btn.btn-primary.disabled(for="rating-1")          
+            %input(type="radio" name="rating-1" id="rating-1")
+            %span.glyphicon.glyphicon-star
+        %span.muted 02/20/2010
+        .review-preview
+          I love Tasha's bubble tea! It makes my day. Sometimes I come by here after work and I just can't decide on which flavor to get. And then I have to decide boba, or not boba. It's just crazy! ... read more
+    %hr
+    .row
+      %img.profile-pic.col-md-3(src="/images/profile_1.jpg")
+      .reviewer-info.col-md-3
+        = link_to 'Frank M.', '#'
+        %br/
+        Toronto, ON
+        .muted 230 Reviews
+      .user-rating.col-md-6
+        .btn-group.star-rating.small-rating(data-toggle="buttons")
+          %label.btn.btn-primary.disabled(for="rating-5")      
+            %input(type="radio" name="rating-5" id="rating-5")
+            %span.glyphicon.glyphicon-star
+          %label.btn.btn-primary.active.disabled(for="rating-4")        
+            %input(type="radio" name="rating-4" id="rating-4")
+            %span.glyphicon.glyphicon-star
+          %label.btn.btn-primary.disabled(for="rating-3")          
+            %input(type="radio" name="rating-3" id="rating-3")
+            %span.glyphicon.glyphicon-star
+          %label.btn.btn-primary.disabled(for="rating-2")          
+            %input(type="radio" name="rating-2" id="rating-2")
+            %span.glyphicon.glyphicon-star
+          %label.btn.btn-primary.disabled(for="rating-1")          
+            %input(type="radio" name="rating-1" id="rating-1")
+            %span.glyphicon.glyphicon-star
+        %span.muted 02/20/2010
+        .review-preview
+          I love Tasha's bubble tea! It makes my day. Sometimes I come by here after work and I just can't decide on which flavor to get. And then I have to decide boba, or not boba. It's just crazy! ... read more
+    %hr
   .company_side-bar.col-md-3
-    I have hours here.
+    .company-details 
+      %h5 Hours 
+      %table
+        %tr
+          %td Mon
+          %td 7:00-8:00
+        %tr
+          %td Tue
+          %td 7:00-8:00
+        %tr
+          %td Wed
+          %td 7:00-8:00
+        %tr
+          %td Thu
+          %td 7:00-8:00                
+        %tr
+          %td Fri
+          %td 7:00-8:00
+        %tr
+          %td Sat
+          %td 7:00-8:00
+        %tr
+          %td Sun
+          %td 7:00-8:00                
+    .company-details
+      %h5 More Business Info
+      %div Bike Parking
+      %span Yes
+      %div Credit Cards Accepted
+      %span No
+      %div Wheel Chair Accessible
+      %span yes
+      %div Take Out
+      %span Yes 
