@@ -13,6 +13,7 @@ Plan
 - [ ] Create UI files:
   - [x] shared header
   - [ ] List of businesses page
+    - [ ]  Create Star rating (unless read-only, on hover, on click)
   - [ ] Create a business form
   - [ ] User register page
   - [ ] User login page
