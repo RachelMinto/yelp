@@ -2,14 +2,17 @@
   .row.business_card
     .company_info.col-md-8
       %h3.text-uppercase The Green Briar
-      .rated
-        .btn-group(role="group")
-          %button.button.btn-default.glyphicon.glyphicon-star.active(type="button")
-          %button.button.btn-default.glyphicon.glyphicon-star.active(type="button")
-          %button.button.btn-default.glyphicon.glyphicon-star(type="button")
-          %button.button.btn-default.glyphicon.glyphicon-star(type="button")
-          %button.button.btn-default.glyphicon.glyphicon-star(type="button")      
-        %span.muted 96 reviews
+      .btn-group.star-rating(data-toggle="buttons")
+        %label.btn.btn-primary(for="rating-5")      
+          %input(type="radio" name="rating-5" id="rating-5")
+          %span.glyphicon.glyphicon-star
+        %label.btn.btn-primary(for="rating-4")        
+          %input(type="radio" name="rating-4" id="rating-4")
+          %span.glyphicon.glyphicon-star
+        %label.btn.btn-primary(for="rating-3")          
+          %input(type="radio" name="rating-3" id="rating-3")
+          %span.glyphicon.glyphicon-star          
+      %span.muted 96 reviews
       .review-preview
         This is an awesome restaurant for a romantic dinner. I came here the other night and I thought it was ... read more
     .company_contact.col-md-4.address
@@ -19,23 +22,3 @@
       %br/      
       740-230-1443
   %hr
-  .row.business_card
-    .company_info.col-md-8
-      %h3.text-uppercase The Green Briar
-      .rated
-        .btn-group(role="group")
-          %button.button.btn-default.glyphicon.glyphicon-star.active(type="button")
-          %button.button.btn-default.glyphicon.glyphicon-star.active(type="button")
-          %button.button.btn-default.glyphicon.glyphicon-star.active(type="button")
-          %button.button.btn-default.glyphicon.glyphicon-star.active(type="button")
-          %button.button.btn-default.glyphicon.glyphicon-star(type="button")      
-        %span.muted 96 reviews
-      .review-preview
-        This is an awesome restaurant for a romantic dinner. I came here the other night and I thought it was ... read more
-    .company_contact.col-md-4.address
-      1400 Beacon St.
-      %br/
-      Boston, MA 02215
-      %br/      
-      740-230-1443
-  %hr  
