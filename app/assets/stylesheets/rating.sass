@@ -1,0 +1,39 @@
+.star-rating
+  label
+    margin-right: 3px
+    span
+      display: inline-block
+      background: grey
+      padding: 5px
+      border-radius: 3px
+  input
+    opacity: 0
+
+.star-rating
+  label.btn,
+  label.btn.btn-primary:hover,
+  label.btn.btn-primary:focus,
+  label.btn.btn-primary:active:focus,
+  label.btn.btn-primary.active,
+    background-color: white
+    border: none
+    padding: 0
+    background: white
+    box-shadow: none
+    outline: 0 none
+
+.star-rating > label.active > span,
+.star-rating > label.active ~ label > span
+  background: red
+
+.star-rating > label
+  &:hover
+    span
+      background: red 
+
+.star-rating > label:hover ~ label > span
+  background: red 
+
+.star-rating
+  label.btn.btn-primary
+    float: right
