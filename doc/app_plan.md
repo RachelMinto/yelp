@@ -10,14 +10,14 @@ Plan
   - [x] Create a business review
   - [x] Other user profile page including that user's reviews
 - [x] Set up twitter bootstrap, rails version and ruby version 
-- [ ] Create UI files:
+- [x] Create UI files:
   - [x] shared header
   - [x] List of businesses page
     - [x]  Create Star rating (unless read-only, on hover, on click)
   - [x] Create a business form
   - [x] User register page
   - [x] User login page
-  - [ ] List of recent reviews
+  - [x] List of recent reviews
   - [x] Create a business review
   - [x] Other user profile page including that user's reviews
 - [ ] Set up postgres
