@@ -1,60 +1,61 @@
-%section.businesses_index.container
-  .row.business_card
-    .company_info.col-md-8
-      %h3.text-uppercase The Green Briar
-      .btn-group.star-rating(data-toggle="buttons")
-        %label.btn.btn-primary(for="rating-5")      
-          %input(type="radio" name="rating-5" id="rating-5")
-          %span.glyphicon.glyphicon-star
-        %label.btn.btn-primary(for="rating-4")        
-          %input(type="radio" name="rating-4" id="rating-4")
-          %span.glyphicon.glyphicon-star
-        %label.btn.btn-primary(for="rating-3")          
-          %input(type="radio" name="rating-3" id="rating-3")
-          %span.glyphicon.glyphicon-star
-        %label.btn.btn-primary.active(for="rating-2")          
-          %input(type="radio" name="rating-2" id="rating-2")
-          %span.glyphicon.glyphicon-star
-        %label.btn.btn-primary(for="rating-1")          
-          %input(type="radio" name="rating-1" id="rating-1")
-          %span.glyphicon.glyphicon-star           
-      %span.muted 96 reviews
-      .review-preview
-        This is an awesome restaurant for a romantic dinner. I came here the other night and I thought it was ... read more
-    .company_contact.col-md-4.address
-      1400 Beacon St.
-      %br/
-      Boston, MA 02215
-      %br/      
-      740-230-1443
-  %hr
-  .row.business_card
-    .company_info.col-md-8
-      %h3.text-uppercase Tasha's Sweet Tea
-      .btn-group.star-rating(data-toggle="buttons")
-        %label.btn.btn-primary.disabled(for="rating-5")      
-          %input(type="radio" name="rating-5" id="rating-5")
-          %span.glyphicon.glyphicon-star
-        %label.btn.btn-primary.active.disabled(for="rating-4")        
-          %input(type="radio" name="rating-4" id="rating-4")
-          %span.glyphicon.glyphicon-star
-        %label.btn.btn-primary.disabled(for="rating-3")          
-          %input(type="radio" name="rating-3" id="rating-3")
-          %span.glyphicon.glyphicon-star
-        %label.btn.btn-primary.disabled(for="rating-2")          
-          %input(type="radio" name="rating-2" id="rating-2")
-          %span.glyphicon.glyphicon-star
-        %label.btn.btn-primary.disabled(for="rating-1")          
-          %input(type="radio" name="rating-1" id="rating-1")
-          %span.glyphicon.glyphicon-star           
-      %span.muted 42 reviews
-      .review-preview
-        I love Tasha's bubble tea! It makes my day. Sometimes I come by here after work and I just can't decide on which flavor to get. And then I have to decide boba, or not boba. It's just crazy! ... read more
-    .company_contact.col-md-4.address
-      42 Berthside St.
-      %br/
-      Medfield, MA 02231
-      %br/      
-      740-230-1441
-  %hr
+.padded-column
+  %section.businesses_index.container
+    .row.business_card
+      .company_info.col-md-9
+        %h3.text-uppercase The Green Briar
+        .btn-group.star-rating(data-toggle="buttons")
+          %label.btn.btn-primary(for="rating-5")      
+            %input(type="radio" name="rating-5" id="rating-5")
+            %span.glyphicon.glyphicon-star
+          %label.btn.btn-primary(for="rating-4")        
+            %input(type="radio" name="rating-4" id="rating-4")
+            %span.glyphicon.glyphicon-star
+          %label.btn.btn-primary(for="rating-3")          
+            %input(type="radio" name="rating-3" id="rating-3")
+            %span.glyphicon.glyphicon-star
+          %label.btn.btn-primary.active(for="rating-2")          
+            %input(type="radio" name="rating-2" id="rating-2")
+            %span.glyphicon.glyphicon-star
+          %label.btn.btn-primary(for="rating-1")          
+            %input(type="radio" name="rating-1" id="rating-1")
+            %span.glyphicon.glyphicon-star           
+        %span.muted 96 reviews
+        .review-preview
+          This is an awesome restaurant for a romantic dinner. I came here the other night and I thought it was ... read more
+      .company_contact.col-md-3.address
+        1400 Beacon St.
+        %br/
+        Boston, MA 02215
+        %br/      
+        740-230-1443
+    %hr
+    .row.business_card
+      .company_info.col-md-9
+        %h3.text-uppercase Tasha's Sweet Tea
+        .btn-group.star-rating(data-toggle="buttons")
+          %label.btn.btn-primary.disabled(for="rating-5")      
+            %input(type="radio" name="rating-5" id="rating-5")
+            %span.glyphicon.glyphicon-star
+          %label.btn.btn-primary.active.disabled(for="rating-4")        
+            %input(type="radio" name="rating-4" id="rating-4")
+            %span.glyphicon.glyphicon-star
+          %label.btn.btn-primary.disabled(for="rating-3")          
+            %input(type="radio" name="rating-3" id="rating-3")
+            %span.glyphicon.glyphicon-star
+          %label.btn.btn-primary.disabled(for="rating-2")          
+            %input(type="radio" name="rating-2" id="rating-2")
+            %span.glyphicon.glyphicon-star
+          %label.btn.btn-primary.disabled(for="rating-1")          
+            %input(type="radio" name="rating-1" id="rating-1")
+            %span.glyphicon.glyphicon-star           
+        %span.muted 42 reviews
+        .review-preview
+          I love Tasha's bubble tea! It makes my day. Sometimes I come by here after work and I just can't decide on which flavor to get. And then I have to decide boba, or not boba. It's just crazy! ... read more
+      .company_contact.col-md-3.address
+        42 Berthside St.
+        %br/
+        Medfield, MA 02231
+        %br/      
+        740-230-1441
+    %hr
 
