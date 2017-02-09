@@ -1,0 +1,74 @@
+.padded-column
+  .row
+    %h4.emphasis.col-md-4 Create a Business
+  %hr
+  %form.with-border.create-business
+    .form-group
+      %label(for="company_name") Company Name
+      %input.form-control(type="text" name="company_name" id="company_name")
+    %hr
+    %h4.emphasis Hours
+    .form-group.form-inline.row
+      %h4.col-md-2 Monday
+      %label.col-form-label(for="mon_start") Opens at: 
+      %input.form-control(type="time" id="mon_start" name="mon_start")
+      %label.col-form-label(for="mon_end") Closes at:
+      %input.form-control(type="time" id="mon_end" name="mon_end")
+    .form-group.form-inline.row
+      %h4.col-md-2 Tuesday    
+      %label(for="tue_start") Opens at:
+      %input.form-control(type="time" id="tue_start" name="tue_start")
+      %label(for="tue_end") Closes at:
+      %input.form-control(type="time" id="tue_end" name="tue_end")
+    .form-group.form-inline.row
+      %h4.col-md-2 Wednesday    
+      %label(for="wed_start") Opens at:
+      %input.form-control(type="time" id="wed_start" name="wed_start")
+      %label(for="wed_end") Closes at:
+      %input.form-control(type="time" id="wed_end" name="wed_end")
+    .form-group.form-inline.row
+      %h4.col-md-2 Thursday    
+      %label(for="thu_start") Opens at:
+      %input.form-control(type="time" id="thu_start" name="thu_start")
+      %label(for="thu_end") Closes at:
+      %input.form-control(type="time" id="thu_end" name="thu_end")
+    .form-group.form-inline.row
+      %h4.col-md-2 Friday    
+      %label(for="fri_start") Opens at:
+      %input.form-control(type="time" id="fri_start" name="fri_start")
+      %label(for="fri_end") Closes at:
+      %input.form-control(type="time" id="fri_end" name="fri_end")
+    .form-group.form-inline.row
+      %h4.col-md-2 Saturday    
+      %label(for="sat_start") Opens at:
+      %input.form-control(type="time" id="sat_start" name="sat_start")
+      %label(for="sat_end") Closes at:
+      %input.form-control(type="time" id="sat_end" name="sat_end")
+    .form-group.form-inline.row
+      %h4.col-md-2 Sunday    
+      %label(for="sun_start") Opens at:
+      %input.form-control(type="time" id="sun_start" name="sun_start")
+      %label(for="sun_end") Closes at:
+      %input.form-control(type="time" id="sun_end" name="sun_end")                        
+    %hr           
+    %h4.emphasis Additional Information         
+    .additional-info
+      %label.custom-control.custom-checkbox
+        %input.custom-control-input(type="checkbox")
+        %span.custom-control-indicator
+        %span.custom-control-description Bike Parking
+      %label.custom-control.custom-checkbox
+        %input.custom-control-input(type="checkbox")
+        %span.custom-control-indicator
+        %span.custom-control-description Wheel Chair Accessible
+      %label.custom-control.custom-checkbox
+        %input.custom-control-input(type="checkbox")
+        %span.custom-control-indicator
+        %span.custom-control-description Accepts Credit Cards
+      %label.custom-control.custom-checkbox
+        %input.custom-control-input(type="checkbox")
+        %span.custom-control-indicator
+        %span.custom-control-description Take Out
+    .form-group
+      %button.ybtn.col-md-2(type="submit") Create
+      = link_to "Cancel", "#"

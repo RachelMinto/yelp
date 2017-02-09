@@ -14,7 +14,7 @@ Plan
   - [x] shared header
   - [x] List of businesses page
     - [x]  Create Star rating (unless read-only, on hover, on click)
-  - [ ] Create a business form
+  - [x] Create a business form
   - [ ] User register page
   - [ ] User login page
   - [ ] List of recent reviews
