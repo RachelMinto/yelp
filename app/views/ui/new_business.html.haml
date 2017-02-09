@@ -7,6 +7,17 @@
       %label(for="company_name") Company Name
       %input.form-control(type="text" name="company_name" id="company_name")
     %hr
+    .form-group
+      %label(for="phone") Phone Number
+      %input.form-control(type="phone" name="phone" id="phone")
+      %label(for="address") Street Address
+      %input.form-control(type="text" name="address" id="address")
+      %label(for="city") City
+      %input.form-control(type="text" name="city" id="city")
+      %label(for="state") State
+      %input.form-control(type="text" name="state" id="state")
+      %label(for="zipcode") Zipcode
+      %input.form-control(type="text" name="zipcode" id="zipcode")                            
     %h4.emphasis Hours
     .form-group.form-inline.row
       %h4.col-md-2 Monday
@@ -54,19 +65,19 @@
     %h4.emphasis Additional Information         
     .additional-info
       %label.custom-control.custom-checkbox
-        %input.custom-control-input(type="checkbox")
+        %input.custom-control-input(type="checkbox" name="bike_parking" id="bike_parking")
         %span.custom-control-indicator
         %span.custom-control-description Bike Parking
       %label.custom-control.custom-checkbox
-        %input.custom-control-input(type="checkbox")
+        %input.custom-control-input(type="checkbox" name="wheel_chair" id="wheel_chair")
         %span.custom-control-indicator
         %span.custom-control-description Wheel Chair Accessible
       %label.custom-control.custom-checkbox
-        %input.custom-control-input(type="checkbox")
+        %input.custom-control-input(type="checkbox" name="credit_cards" id="credit_cards")
         %span.custom-control-indicator
         %span.custom-control-description Accepts Credit Cards
       %label.custom-control.custom-checkbox
-        %input.custom-control-input(type="checkbox")
+        %input.custom-control-input(type="checkbox" name="take_out" id="take_out")
         %span.custom-control-indicator
         %span.custom-control-description Take Out
     .form-group

@@ -1,6 +1,7 @@
 Plan
 - [x] Create ERD:
   - [x] User, Business, Review
+- [x] Set up postgres
 - [x] Create design mockups of pages
   - [x] List of businesses page
   - [x] Create a business form
@@ -20,13 +21,11 @@ Plan
   - [x] List of recent reviews
   - [x] Create a business review
   - [x] Other user profile page including that user's reviews
-- [ ] Set up postgres
-
 - [ ] root_path is list of businesses
   - [ ] create TDD for business controller and model
+  - [ ] Create db
   - [ ] create route to businesses#index
   - [ ] Implement root_path
-  - [ ] Create slug for business#show
 - [ ] Businesses#new
   - [ ] create TDD for business controller #new
   - [ ] Generate migration for businesses table
@@ -58,3 +57,4 @@ Plan
 - [ ] Add pagination for business index page
 - [ ] Add tags to businesses?
 - [ ] Add photos to reviews?
+- [ ] Create slug for business#show
