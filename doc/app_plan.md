@@ -12,14 +12,14 @@ Plan
 - [x] Set up twitter bootstrap, rails version and ruby version 
 - [ ] Create UI files:
   - [x] shared header
-  - [ ] List of businesses page
-    - [ ]  Create Star rating (unless read-only, on hover, on click)
+  - [x] List of businesses page
+    - [x]  Create Star rating (unless read-only, on hover, on click)
   - [ ] Create a business form
   - [ ] User register page
   - [ ] User login page
   - [ ] List of recent reviews
-  - [ ] Create a business review
-  - [ ] Other user profile page including that user's reviews
+  - [x] Create a business review
+  - [x] Other user profile page including that user's reviews
 - [ ] Set up postgres
 
 - [ ] root_path is list of businesses
