@@ -16,7 +16,7 @@ Plan
     - [x]  Create Star rating (unless read-only, on hover, on click)
   - [x] Create a business form
   - [x] User register page
-  - [ ] User login page
+  - [x] User login page
   - [ ] List of recent reviews
   - [x] Create a business review
   - [x] Other user profile page including that user's reviews
