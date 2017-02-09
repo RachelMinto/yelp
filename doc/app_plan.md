@@ -22,9 +22,11 @@ Plan
   - [x] Create a business review
   - [x] Other user profile page including that user's reviews
 - [ ] root_path is list of businesses
-  - [ ] create TDD for business controller and model
-  - [ ] Create db
-  - [ ] create route to businesses#index
+  - [x] create TDD for business controller and model
+  - [x] Create db
+  - [x] create route to businesses#index
+  - [ ] create seed data for 5 businesses
+  - [ ] Create view for business#index
   - [ ] Implement root_path
 - [ ] Businesses#new
   - [ ] create TDD for business controller #new
@@ -54,6 +56,9 @@ Plan
 - [ ] Install capybara gem
 - [ ] Create integrated test for registering and sigining in a user
 - [ ] Created integrated test for viewing another user's profile page
+- [ ] Review#show
+  - [ ] create TDD for reviews controller #show
+  - [ ] create route to reviews #show 
 - [ ] Add pagination for business index page
 - [ ] Add tags to businesses?
 - [ ] Add photos to reviews?
