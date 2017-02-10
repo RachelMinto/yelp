@@ -1,0 +1,20 @@
+.padded-column.user-form
+  .row
+    = bootstrap_form_for(@user) do |f|  
+      .with-border.col-md-6
+        %h4.emphasis Sign Up for Yelp
+        %hr      
+        %fieldset.row
+          %fieldset.col-md-6
+            = f.text_field :first_name, label: 'First Name'
+          %fieldset.col-md-6          
+            = f.text_field :last_name, label: 'Last Name' 
+        %fieldset
+          = f.text_field :location, label: 'Home Town and State', placeholder: " Eg. Boston, MA"
+        %fieldset
+          = f.email_field :email, label: 'Email' 
+        %fieldset
+          = f.password_field :password, label: 'Password' 
+        %fieldset.row.text-center
+          %button.ybtn.col-md-3(type="submit") Sign Up                                  
+      %img.col-md-6.offset-md-col-2(src="/images/signup_illustration.png")
