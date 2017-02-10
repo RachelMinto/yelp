@@ -10,12 +10,18 @@
             .btn.btn-secondary(type="submit")
               %span.sr-only Search
               %span.glyphicon.glyphicon-search.white
-      .btn.white.col-md-1
-        = link_to 'Sign Up', register_path
-  %section#sub-header.row
-    .white.col-md-offset-5.col-md-2
-      = link_to 'Create a Business', new_business_path    
-    .white.col-md-2
-      = link_to 'Create a Review', '#'  
-    .white.login.col-md-2
-      = link_to 'Log In', '#'
+      - unless logged_in?
+        .btn.white.col-md-1
+          = link_to 'Sign Up', register_path
+  - if logged_in?
+    %section#sub-header.row
+      .white.col-md-offset-5.col-md-2
+        = link_to 'Create a Business', new_business_path    
+      .white.col-md-2
+        = link_to 'Create a Review', '#'
+      .white.login.col-md-2
+        = link_to 'Log Out', '#'
+  - else
+    %section#sub-header.row
+      .white.col-md-offset-7.login.col-md-2
+        = link_to 'Log In', login_path

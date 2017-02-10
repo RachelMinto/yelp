@@ -42,21 +42,23 @@ Plan
 - [x] Users#show
   - [x] create TDD for users controller #show
   - [x] Create seed data for 5 users
-- [ ] Sessions#new
-  - [ ] create TDD for sessions controller #new
-  - [ ] create route to sessions #new
-- [ ] Session#create
-  - [ ] create TDD for sessions controller #create
-  - [ ] create route to sessions #create
+- [x] Sessions#new
+  - [x] create TDD for sessions controller #new
+  - [x] create route to sessions #new
+- [x] Session#create
+  - [x] create TDD for sessions controller #create
+  - [x] create route to sessions #create
+- [x] Session#destroy
+  - [x] create TDD for sessions controller and model #destroy
+  - [x] create route to sessions #destroy
+- [x] Create shared_example for requires_authenticated_user 
+  - [x] require_authenticated_user to create a business
 - [ ] Review#new
   - [ ] create TDD for reviews controller and model #new
   - [ ] create route to reviews #new
 - [ ] Review#create
   - [ ] create TDD for reviews controller and model #create
   - [ ] create route to reviews #create
-- [ ] Create shared_example for requires_authenticated_user 
-  - [ ] require_authenticated_user to post a review
-  - [ ] require_authenticated_user to create a business
 - [ ] Install capybara gem
 - [ ] Create integrated test for registering and sigining in a user
 - [ ] Created integrated test for viewing another user's profile page
