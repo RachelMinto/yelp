@@ -1,0 +1,68 @@
+%section.profile_show.container
+  .row
+    %img.profile-pic.col-md-3(src="/images/profile_1.jpg")
+    .reviewer-info
+      = link_to "#{user.first_name} #{user.last_initial}", '#'
+      %br/
+      Toronto, MD
+      .muted 230 Reviews
+.padded-column
+  .row
+    %h4.emphasis.col-md-4 Recent Reviews
+  %hr
+  .row.profile-review
+    .company-info.col-md-3
+      %h4 The Green Briar
+      .address
+        425 Washington St.,
+        %br/
+        Toronto, MD
+    .user-rating.col-md-7
+      .btn-group.star-rating.small-rating(data-toggle="buttons")
+        %label.btn.btn-primary.disabled(for="rating-5")      
+          %input(type="radio" name="rating-5" id="rating-5")
+          %span.glyphicon.glyphicon-star
+        %label.btn.btn-primary.active.disabled(for="rating-4")        
+          %input(type="radio" name="rating-4" id="rating-4")
+          %span.glyphicon.glyphicon-star
+        %label.btn.btn-primary.disabled(for="rating-3")          
+          %input(type="radio" name="rating-3" id="rating-3")
+          %span.glyphicon.glyphicon-star
+        %label.btn.btn-primary.disabled(for="rating-2")          
+          %input(type="radio" name="rating-2" id="rating-2")
+          %span.glyphicon.glyphicon-star
+        %label.btn.btn-primary.disabled(for="rating-1")          
+          %input(type="radio" name="rating-1" id="rating-1")
+          %span.glyphicon.glyphicon-star
+      %span.muted 02/20/2015
+      .review-preview
+        The Green Briar has the best clam chowder in New England. I come here every time that there is a blizzard forecasted. I huddle inside with the warm chowder and enjoy my snow day. I'm not sure why they are ... read more
+  %hr
+  .row.profile-review
+    .company-info.col-md-3
+      %h4 The Green Briar
+      .address
+        425 Washington St.,
+        %br/
+        Toronto, MD
+    .user-rating.col-md-7
+      .btn-group.star-rating.small-rating(data-toggle="buttons")
+        %label.btn.btn-primary.disabled(for="rating-5")      
+          %input(type="radio" name="rating-5" id="rating-5")
+          %span.glyphicon.glyphicon-star
+        %label.btn.btn-primary.active.disabled(for="rating-4")        
+          %input(type="radio" name="rating-4" id="rating-4")
+          %span.glyphicon.glyphicon-star
+        %label.btn.btn-primary.disabled(for="rating-3")          
+          %input(type="radio" name="rating-3" id="rating-3")
+          %span.glyphicon.glyphicon-star
+        %label.btn.btn-primary.disabled(for="rating-2")          
+          %input(type="radio" name="rating-2" id="rating-2")
+          %span.glyphicon.glyphicon-star
+        %label.btn.btn-primary.disabled(for="rating-1")          
+          %input(type="radio" name="rating-1" id="rating-1")
+          %span.glyphicon.glyphicon-star
+      %span.muted 02/20/2015
+      .review-preview
+        The Green Briar has the best clam chowder in New England. I come here every time that there is a blizzard forecasted. I huddle inside with the warm chowder and enjoy my snow day. I'm not sure why they are ... read more
+  %hr  

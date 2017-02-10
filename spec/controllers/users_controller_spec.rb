@@ -38,7 +38,19 @@ describe UsersController do
 
       it "does not create a new user" do
         expect(User.count).to eq(0)        
-      end     
+      end
+
+      it "renders user#new" do
+        expect(response).to render_template('new')    
+      end      
+    end
+  end
+
+  describe "GET show" do
+    it "sets @user" do
+      user = Fabricate(:user)
+      get :show, id: user.id
+      expect(assigns(:user)).to eq(user)
     end
   end
 end

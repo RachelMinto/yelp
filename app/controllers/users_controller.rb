@@ -9,7 +9,13 @@ class UsersController < ApplicationController
     if @user.save
       flash[:success] = "Welcome, #{@user.first_name}"      
       redirect_to root_path
+    else
+      render :new
     end
+  end
+
+  def show
+    @user = User.find(params[:id])
   end
 
   def user_params

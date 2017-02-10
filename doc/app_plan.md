@@ -40,7 +40,8 @@ Plan
   - [x] create TDD for users controller and model #create
   - [x] create route to users #create
 - [ ] Users#show
-  - [ ] create TDD for users controller #show
+  - [x] create TDD for users controller #show
+  - [ ] Create seed data for 5 users
   - [ ] create route to users #show 
 - [ ] Sessions#new
   - [ ] create TDD for sessions controller #new
