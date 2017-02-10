@@ -1,0 +1,18 @@
+.padded-column.user-form
+  .row
+    .col-md-6
+      = form_tag sessions_path, class: 'with-border' do
+        %h4.emphasis Log In
+        %hr
+        .row
+          %field_set_tag.col-md-4
+            = label_tag :email
+            = email_field_tag :email
+        .row
+          %field_set_tag.col-md-4          
+            = label_tag :password
+            = password_field_tag :password
+        .row
+          .form-group.row.text-center
+            %button.ybtn.col-md-3#login-button(type="submit") Sign In                                 
+    %img.col-md-5(src="/images/signup_illustration.png")
