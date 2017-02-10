@@ -15,4 +15,16 @@ describe BusinessesController do
       expect(response).to render_template('index')
     end
   end
+
+  describe 'GET new' do
+    before { get :new }
+
+    it "sets @business" do
+      expect(assigns(:business)).to be_instance_of(Business)
+    end
+
+    it "renders the business#new template" do
+      expect(response).to render_template('new')
+    end
+  end
 end

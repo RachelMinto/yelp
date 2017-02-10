@@ -1,0 +1,62 @@
+.padded-column
+  .row
+    %h4.emphasis.col-md-4 Create a Business
+  %hr
+  = bootstrap_form_for(@business) do |f|
+    %fieldset
+      = f.text_field :company_name, label: 'Company Name'
+    %hr
+    %fieldset
+      = f.phone_field :phone, label: 'Phone Number'
+      = f.text_field :address, label: 'Street Address'      
+      = f.text_field :city, label: 'City'
+      %label(for="state") State
+      %input.form-control(type="text" name="state" id="state")
+      = f.text_field :zipcode, label: 'Zipcode'                          
+    %h4.emphasis Hours
+    .form-group.form-inline.row
+      %h4.col-md-3 Monday
+      = f.time_field :mon_start, label: 'Opens at:'
+      = f.time_field :mon_end, label: 'Closes at:'
+    .form-group.form-inline.row
+      %h4.col-md-3 Tuesday    
+      = f.time_field :tue_start, label: 'Opens at:'
+      = f.time_field :tue_end, label: 'Closes at:'
+    .form-group.form-inline.row
+      %h4.col-md-3 Wednesday    
+      = f.time_field :wed_start, label: 'Opens at:'
+      = f.time_field :wed_end, label: 'Closes at:'
+    .form-group.form-inline.row
+      %h4.col-md-3 Thursday    
+      = f.time_field :thu_start, label: 'Opens at:'
+      = f.time_field :thu_end, label: 'Closes at:'
+    .form-group.form-inline.row
+      %h4.col-md-3 Friday    
+      = f.time_field :fri_start, label: 'Opens at:'
+      = f.time_field :fri_end, label: 'Closes at:'
+    .form-group.form-inline.row
+      %h4.col-md-3 Saturday    
+      = f.time_field :sat_start, label: 'Opens at:'
+      = f.time_field :sat_end, label: 'Closes at:'
+    .form-group.form-inline.row
+      %h4.col-md-3 Sunday    
+      = f.time_field :sun_start, label: 'Opens at:'
+      = f.time_field :sun_end, label: 'Closes at:'                      
+    %hr           
+    %h4.emphasis Additional Information         
+    .additional-info
+      %label.custom-control.custom-checkbox
+        %input.custom-control-input(type="checkbox" name="bike_parking" id="bike_parking")
+        %span.custom-control-indicator
+        %span.custom-control-description Bike Parking
+      %label.custom-control.custom-checkbox
+        %input.custom-control-input(type="checkbox" name="wheel_chair" id="wheel_chair")
+        %span.custom-control-indicator
+        %span.custom-control-description Wheel Chair Accessible
+      %label.custom-control.custom-checkbox
+        %input.custom-control-input(type="checkbox" name="credit_cards" id="credit_cards")
+        %span.custom-control-indicator
+        %span.custom-control-description Accepts Credit Cards
+    .form-group
+      %button.ybtn.col-md-2(type="submit") Create
+      = link_to "Cancel", "#"
