@@ -29,7 +29,6 @@ Plan
   - [x] Create view for business#index
 - [ ] Businesses#new
   - [ ] create TDD for business controller #new
-  - [ ] Generate migration for businesses table
   - [ ] create routes to businesses #new
 - [ ] Businesses#create
   - [ ] create TDD for business controller #create

@@ -3,8 +3,9 @@
     %h4.emphasis.col-md-4 Create a Business
   %hr
   = bootstrap_form_for(@business) do |f|
-    %fieldset
-      = f.text_field :company_name, label: 'Company Name'
+    %fieldset.row
+      .form-group.col-md-8    
+        = f.text_field :company_name, label: 'Company Name'
     %hr
     %fieldset.row
       .form-group.col-md-4
