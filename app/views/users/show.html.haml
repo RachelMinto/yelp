@@ -1,0 +1,8 @@
+%section.profile_show.container
+  .row
+    = image_tag("#{@user.profile_picture}", class: "profile-pic col-md-3")
+    .reviewer-info
+      = link_to "#{@user.first_name} #{@user.last_initial}", '#'
+      %br/
+      = "#{@user.location}"
+      .muted 230 Reviews
