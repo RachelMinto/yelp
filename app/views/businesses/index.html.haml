@@ -1,0 +1,14 @@
+.padded-column
+  %section.businesses_index.container
+    - @businesses.each do |business|
+      .row.business_card
+        .company_info.col-md-9
+          %h3.text-uppercase= "#{business.company_name}"
+        .company_contact.col-md-3.address
+          = "#{business.address}"
+          %br/
+          = "#{business.city}, #{business.state} #{business.zipcode}"
+          %br/      
+          = "#{business.phone}"
+      %hr
+

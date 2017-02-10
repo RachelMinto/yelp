@@ -1,6 +1,7 @@
 Plan
 - [x] Create ERD:
   - [x] User, Business, Review
+- [x] Set up postgres
 - [x] Create design mockups of pages
   - [x] List of businesses page
   - [x] Create a business form
@@ -20,13 +21,12 @@ Plan
   - [x] List of recent reviews
   - [x] Create a business review
   - [x] Other user profile page including that user's reviews
-- [ ] Set up postgres
-
-- [ ] root_path is list of businesses
-  - [ ] create TDD for business controller and model
-  - [ ] create route to businesses#index
-  - [ ] Implement root_path
-  - [ ] Create slug for business#show
+- [x] root_path is list of businesses
+  - [x] create TDD for business controller and model
+  - [x] Create db
+  - [x] create route to businesses#index
+  - [x] create seed data for 5 businesses
+  - [x] Create view for business#index
 - [ ] Businesses#new
   - [ ] create TDD for business controller #new
   - [ ] Generate migration for businesses table
@@ -55,6 +55,10 @@ Plan
 - [ ] Install capybara gem
 - [ ] Create integrated test for registering and sigining in a user
 - [ ] Created integrated test for viewing another user's profile page
+- [ ] Review#show
+  - [ ] create TDD for reviews controller #show
+  - [ ] create route to reviews #show 
 - [ ] Add pagination for business index page
 - [ ] Add tags to businesses?
 - [ ] Add photos to reviews?
+- [ ] Create slug for business#show
