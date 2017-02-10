@@ -1,0 +1,32 @@
+.padded-column
+  %h4.emphasis Write a Review
+  .company_info
+    %h3.text-uppercase= "#{@business.company_name}"
+  .company_contact.address
+    = "#{@business.address}, #{@business.city}, #{@business.state} #{@business.zipcode}"
+  %hr
+  %h4 Your Review
+  = bootstrap_form_for([@business, @review]) do |f|  
+    .clearfix.with-border#new-review
+      .btn-group.star-rating.large-rating.rateable(data-toggle="buttons")
+        %label.btn.btn-primary(for="rating-5")      
+          = f.radio_button :rating, 5
+          %span.glyphicon.glyphicon-star
+        %label.btn.btn-primary(for="rating-4")        
+          = f.radio_button :rating, 4
+          %span.glyphicon.glyphicon-star
+        %label.btn.btn-primary(for="rating-3")          
+          = f.radio_button :rating, 3
+          %span.glyphicon.glyphicon-star
+        %label.btn.btn-primary(for="rating-2")          
+          = f.radio_button :rating, 2
+          %span.glyphicon.glyphicon-star
+        %label.btn.btn-primary(for="rating-1")          
+          = f.radio_button :rating, 1
+          %span.glyphicon.glyphicon-star
+      .row
+        .col-md-9.comment-box
+          = f.text_area :comment
+      .form-group
+        %button.ybtn.col-md-2(type="submit") Submit
+        = link_to "Cancel", root_path
