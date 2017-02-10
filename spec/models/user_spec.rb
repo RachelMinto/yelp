@@ -5,5 +5,6 @@ describe User do
   it { should validate_presence_of :last_name }
   it { should validate_presence_of :email }
   it { should validate_presence_of :password }
-  it { should validate_presence_of :location }  
+  it { should validate_presence_of :location }
+  it { should ensure_length_of(:password).is_at_least(8).on(:create) }      
 end

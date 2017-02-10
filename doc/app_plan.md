@@ -33,12 +33,12 @@ Plan
 - [x] Businesses#create
   - [x] create TDD for business controller #create
   - [x] create routes to businesses #create
-- [ ] Users#new
+- [x] Users#new
   - [x] create TDD for users controller and model #new
-  - [ ] create routes to users #new as #register
-- [ ] Users#create
-  - [ ] create TDD for users controller #create
-  - [ ] create route to users #create
+  - [x] create routes to users #new as #register
+- [x] Users#create
+  - [x] create TDD for users controller and model #create
+  - [x] create route to users #create
 - [ ] Users#show
   - [ ] create TDD for users controller #show
   - [ ] create route to users #show 
