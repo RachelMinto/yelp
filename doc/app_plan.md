@@ -27,27 +27,27 @@ Plan
   - [x] create route to businesses#index
   - [x] create seed data for 5 businesses
   - [x] Create view for business#index
-- [ ] Businesses#new
-  - [ ] create TDD for business controller #new
-  - [ ] create routes to businesses #new
-- [ ] Businesses#create
-  - [ ] create TDD for business controller #create
-  - [ ] create routes to businesses #create
+- [x] Businesses#new
+  - [x] create TDD for business controller #new
+  - [x] create routes to businesses #new
+- [x] Businesses#create
+  - [x] create TDD for business controller #create
+  - [x] create routes to businesses #create
 - [ ] Users#new
-  - [ ] create TDD for users controller #new
+  - [x] create TDD for users controller and model #new
   - [ ] create routes to users #new as #register
 - [ ] Users#create
   - [ ] create TDD for users controller #create
   - [ ] create route to users #create
+- [ ] Users#show
+  - [ ] create TDD for users controller #show
+  - [ ] create route to users #show 
 - [ ] Sessions#new
   - [ ] create TDD for sessions controller #new
   - [ ] create route to sessions #new
 - [ ] Session#create
   - [ ] create TDD for sessions controller #create
   - [ ] create route to sessions #create
-- [ ] Users#show
-  - [ ] create TDD for users controller #show
-  - [ ] create route to users #show
 - [ ] Create shared_example for requires_authenticated_user 
   - [ ] require_authenticated_user to post a review
   - [ ] require_authenticated_user to create a business

@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   root to: "businesses#index"  
 
   resources :businesses, only: [:index, :new, :create]
+  resources :users, only: [:new, :create, :show]
 end
