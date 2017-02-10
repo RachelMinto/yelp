@@ -59,7 +59,6 @@ Plan
 - [ ] Review#create
   - [ ] create TDD for reviews controller and model #create
   - [ ] create route to reviews #create
-- [ ] Install capybara gem
 - [ ] Create integrated test for registering and sigining in a user
 - [ ] Created integrated test for viewing another user's profile page
 - [ ] Review#show

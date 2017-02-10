@@ -4,7 +4,10 @@ Rails.application.routes.draw do
   get '/register', to: 'users#new', as: :register
   get '/login', to: 'sessions#new', as: :login
 
-  resources :businesses, only: [:index, :new, :create]
+  resources :businesses, only: [:index, :new, :create] do
+    resources :reviews, only: [:new, :create]
+  end
+  
   resources :users, only: [:new, :create, :show]
-  resources :sessions, only: [:new, :create, :destroy]  
+  resources :sessions, only: [:new, :create, :destroy]
 end
