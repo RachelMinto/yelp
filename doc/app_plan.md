@@ -39,16 +39,21 @@ Plan
 - [x] Users#create
   - [x] create TDD for users controller and model #create
   - [x] create route to users #create
-- [ ] Users#show
+- [x] Users#show
   - [x] create TDD for users controller #show
-  - [ ] Create seed data for 5 users
-  - [ ] create route to users #show 
+  - [x] Create seed data for 5 users
 - [ ] Sessions#new
   - [ ] create TDD for sessions controller #new
   - [ ] create route to sessions #new
 - [ ] Session#create
   - [ ] create TDD for sessions controller #create
   - [ ] create route to sessions #create
+- [ ] Review#new
+  - [ ] create TDD for reviews controller and model #new
+  - [ ] create route to reviews #new
+- [ ] Review#create
+  - [ ] create TDD for reviews controller and model #create
+  - [ ] create route to reviews #create
 - [ ] Create shared_example for requires_authenticated_user 
   - [ ] require_authenticated_user to post a review
   - [ ] require_authenticated_user to create a business
@@ -57,7 +62,9 @@ Plan
 - [ ] Created integrated test for viewing another user's profile page
 - [ ] Review#show
   - [ ] create TDD for reviews controller #show
-  - [ ] create route to reviews #show 
+  - [ ] create route to reviews #show
+  - [ ] create route to users #show for each review
+- [ ] Add image upload for profile
 - [ ] Add pagination for business index page
 - [ ] Add tags to businesses?
 - [ ] Add photos to reviews?
