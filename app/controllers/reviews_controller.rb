@@ -1,4 +1,5 @@
 class ReviewsController < ApplicationController
+  before_action :require_user, only: [:new, :create]
 
   def index
 
@@ -10,6 +11,19 @@ class ReviewsController < ApplicationController
   end
 
   def create
-    binding.pry
+    @business = Business.find(params[:business_id])
+    review = @business.reviews.build(review_params.merge!(user: current_user))
+
+    if review.save
+      redirect_to @business
+    else
+      render :new
+    end
+  end
+
+  private
+
+  def review_params
+    params.require(:review).permit(:rating, :comment)
   end
 end

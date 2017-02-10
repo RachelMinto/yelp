@@ -17,6 +17,8 @@ class BusinessesController < ApplicationController
     end
   end
 
+  private
+
   def business_params
     params.require(:business).permit(:company_name, :address, :city, :state, 
       :zipcode, :phone, :bike_parking, :credit_cards, :wheel_chair,

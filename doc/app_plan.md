@@ -54,7 +54,7 @@ Plan
 - [x] Create shared_example for requires_authenticated_user 
   - [x] require_authenticated_user to create a business
 - [ ] Review#new
-  - [ ] create TDD for reviews controller and model #new
+  - [x] create TDD for reviews controller and model #new
   - [ ] create route to reviews #new
 - [ ] Review#create
   - [ ] create TDD for reviews controller and model #create

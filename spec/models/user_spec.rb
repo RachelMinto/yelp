@@ -7,6 +7,7 @@ describe User do
   it { should validate_presence_of :password }
   it { should validate_presence_of :location }
   it { should ensure_length_of(:password).is_at_least(8).on(:create) }
+  it { should have_many(:reviews)}  
 
   context "#last_initial" do
     it "should return first letter of user's last name followed by period" do
