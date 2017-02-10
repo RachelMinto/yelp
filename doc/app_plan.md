@@ -59,6 +59,7 @@ Plan
 - [ ] Review#create
   - [ ] create TDD for reviews controller and model #create
   - [ ] create route to reviews #create
+- [ ] Business#show tests etc.
 - [ ] Create integrated test for registering and sigining in a user
 - [ ] Created integrated test for viewing another user's profile page
 - [ ] Review#show
