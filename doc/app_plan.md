@@ -21,13 +21,12 @@ Plan
   - [x] List of recent reviews
   - [x] Create a business review
   - [x] Other user profile page including that user's reviews
-- [ ] root_path is list of businesses
+- [x] root_path is list of businesses
   - [x] create TDD for business controller and model
   - [x] Create db
   - [x] create route to businesses#index
-  - [ ] create seed data for 5 businesses
-  - [ ] Create view for business#index
-  - [ ] Implement root_path
+  - [x] create seed data for 5 businesses
+  - [x] Create view for business#index
 - [ ] Businesses#new
   - [ ] create TDD for business controller #new
   - [ ] Generate migration for businesses table

@@ -21,7 +21,7 @@ Business.create(company_name: 'Filirino\'s', address: '45 Beacon St.',
   fri_start: '12:00 PM', fri_end: '2:00 AM', sat_start: '10:00 AM', sat_end: '12:00 AM',
   sun_start: '12:00 PM', sun_end: '12:00 AM')
 
-Business.create(company_name: 'Perry\'s Icecream Shoppe', address: '422 Merry Lane', 
+Business.create(company_name: 'Perry\'s Ice Cream Shoppe', address: '422 Merry Lane', 
   city: 'Madison', state: 'WI', zipcode: '03424', phone: '9044434500', 
   bike_parking: true, credit_cards: false, wheel_chair: false, 
   mon_start: '12:00 PM', mon_end: '10:00 PM', tue_start: '12:00 PM', tue_end: '10:00 PM', 
