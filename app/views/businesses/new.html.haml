@@ -1,0 +1,60 @@
+.padded-column
+  .row
+    %h4.emphasis.col-md-4 Create a Business
+  %hr
+  = bootstrap_form_for(@business) do |f|
+    %fieldset.row
+      .form-group.col-md-8    
+        = f.text_field :company_name, label: 'Company Name'
+    %hr
+    %fieldset.row
+      .form-group.col-md-4
+        = f.phone_field :phone, label: 'Phone Number'
+    .row
+      .form-group.col-md-4
+        = f.text_field :address, label: 'Street Address'
+      .form-group.col-md-4
+        = f.text_field :city, label: 'City'
+    .row        
+      .form-group.col-md-4        
+        = f.select :state, us_states
+      .form-group.col-md-4        
+        = f.text_field :zipcode, label: 'Zipcode'                          
+    %h4.emphasis Hours
+    %fieldset.form-inline.row
+      %h4.col-md-3 Monday
+      = f.time_field :mon_start, label: 'Opens at:'
+      = f.time_field :mon_end, label: 'Closes at:'
+    %fieldset.form-inline.row
+      %h4.col-md-3 Tuesday    
+      = f.time_field :tue_start, label: 'Opens at:'
+      = f.time_field :tue_end, label: 'Closes at:'
+    %fieldset.form-inline.row
+      %h4.col-md-3 Wednesday    
+      = f.time_field :wed_start, label: 'Opens at:'
+      = f.time_field :wed_end, label: 'Closes at:'
+    %fieldset.form-inline.row
+      %h4.col-md-3 Thursday    
+      = f.time_field :thu_start, label: 'Opens at:'
+      = f.time_field :thu_end, label: 'Closes at:'
+    %fieldset.form-inline.row
+      %h4.col-md-3 Friday    
+      = f.time_field :fri_start, label: 'Opens at:'
+      = f.time_field :fri_end, label: 'Closes at:'
+    %fieldset.form-inline.row
+      %h4.col-md-3 Saturday    
+      = f.time_field :sat_start, label: 'Opens at:'
+      = f.time_field :sat_end, label: 'Closes at:'
+    %fieldset.form-inline.row
+      %h4.col-md-3 Sunday    
+      = f.time_field :sun_start, label: 'Opens at:'
+      = f.time_field :sun_end, label: 'Closes at:'                      
+    %hr           
+    %h4.emphasis Additional Information         
+    .additional-info
+      = f.check_box :bike_parking, label: 'Bike parking'
+      = f.check_box :bike_parking, label: 'Wheel Chair Accessible'
+      = f.check_box :bike_parking, label: 'Accepts Credit Cards'            
+    .form-group
+      %button.ybtn.col-md-2(type="submit") Create
+      = link_to "Cancel", "#"
