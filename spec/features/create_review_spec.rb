@@ -36,7 +36,7 @@ feature "user creates a business review" do
 
   def expect_show_page_for(business2)
     page.should have_content(business2.company_name)
-    page.should have_content("Hours")    
+    page.should have_content("More Business Info")    
   end
 
   def click_create_review

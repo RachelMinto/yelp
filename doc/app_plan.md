@@ -74,6 +74,6 @@ Plan
 - [x] Integrated test for view business index, view business, create a review,
 - [x] Created integrated test for viewing another user's profile page
 - [x] Make hours say closed if not present and extract to partial
-- [ ] Clean up all views' html
-- [ ] remove search field
-- [ ] user cannot make multiple reviews for one business
+- [x] remove search field
+- [x] Test recent reviews show less than 10 if less than 10 reviews.
+- [x] Clean up all views' html

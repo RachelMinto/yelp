@@ -10,7 +10,7 @@
         .address
           = review.business.address
           %br/
-          = "#{review.business.city}, #{review.business.state} #{review.business.zipcode}"
+          = review.business.city_state_zipcode
       .user-rating.col-md-7
         = render partial: 'shared/star_rating_readonly', locals: { rating: review.rating }
         %span.muted= formatted_date(review.created_at)

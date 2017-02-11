@@ -26,4 +26,8 @@ class Business < ActiveRecord::Base
   def hours_given?
     !!(mon_start && mon_end || tue_start && tue_end || wed_start && wed_end || thu_start && thu_end || fri_start && fri_end || sat_start && sat_end || sun_start && sun_end)
   end
+
+  def city_state_zipcode
+    "#{city}, #{state} #{zipcode}"
+  end
 end

@@ -15,10 +15,10 @@ class ReviewsController < ApplicationController
     @review = @business.reviews.build(review_params.merge!(user: current_user))
 
     if @review.save
-      flash[:success] = 'Review has been created succesfully.'      
+      flash['success'] = 'Review has been created succesfully.'      
       redirect_to @business
     else
-      flash[:error] = 'There was a problem with your review.'
+      flash['danger'] = 'There was a problem with your review.'
       render :new
     end
   end

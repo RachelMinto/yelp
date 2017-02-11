@@ -63,7 +63,7 @@ describe ReviewsController do
         end
 
         it "gives an error message" do
-          expect(flash[:error]).to eq('There was a problem with your review.')
+          expect(flash['danger']).to eq('There was a problem with your review.')
         end
       end      
 
@@ -87,7 +87,7 @@ describe ReviewsController do
         end
         
         it "gives a success message" do
-          expect(flash[:success]).to eq('Review has been created succesfully.')
+          expect(flash['success']).to eq('Review has been created succesfully.')
         end
 
         it "sets @review" do

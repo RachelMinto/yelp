@@ -29,7 +29,7 @@ describe UsersController do
       end      
 
       it "gives a success message" do
-        expect(flash[:success]).to eq('Welcome, Alice')
+        expect(flash['success']).to eq('Welcome, Alice')
       end
     end
 

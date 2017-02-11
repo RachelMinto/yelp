@@ -24,7 +24,7 @@ describe SessionsController do
       before { post :create, email: 'wontwork@hotmail.com' }
 
       it "gives an error message" do
-        expect(flash[:error]).to eq("There is something wrong with your username or password.")
+        expect(flash['danger']).to eq("There is something wrong with your username or password.")
       end
 
       it "renders new" do
@@ -43,7 +43,7 @@ describe SessionsController do
       end
 
       it "gives an error message" do
-        expect(flash[:error]).to eq("There is something wrong with your username or password.")
+        expect(flash['danger']).to eq("There is something wrong with your username or password.")
       end
 
       it "renders new" do
@@ -63,7 +63,7 @@ describe SessionsController do
       end
 
       it "gives a success notice" do
-        expect(flash[:notice]).to eq("You have successfully logged in.")
+        expect(flash['success']).to eq("You have successfully logged in.")
       end
 
       it "redirects to root_path" do

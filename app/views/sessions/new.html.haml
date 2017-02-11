@@ -5,13 +5,13 @@
         %h4.emphasis Log In
         %hr
         .row
-          %field_set_tag.col-md-4
+          %field_set_tag.col-md-11
             = label_tag :email
-            = email_field_tag :email
+            = email_field_tag :email, nil, class: 'form-control'
         .row
-          %field_set_tag.col-md-4          
+          %field_set_tag.col-md-11          
             = label_tag :password
-            = password_field_tag :password
+            = password_field_tag :password, nil, class: 'form-control'
         .row
           .form-group.row.text-center
             %button.ybtn.col-md-3#login-button(type="submit") Sign In                                 

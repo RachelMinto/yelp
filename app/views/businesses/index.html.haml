@@ -13,7 +13,7 @@
         .company_contact.col-md-3.address
           = "#{business.address}"
           %br/
-          = "#{business.city}, #{business.state} #{business.zipcode}"
+          = business.city_state_zipcode
           %br/      
           = "#{business.phone}"
       %hr

@@ -8,6 +8,6 @@ shared_examples "requires_authenticated_user" do
   it "should give an error message" do
     clear_current_user
     action    
-    expect(flash[:error]).to eq("You must be logged in to do that.")
+    expect(flash['danger']).to eq("You must be logged in to do that.")
   end     
 end

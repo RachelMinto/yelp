@@ -3,7 +3,7 @@
   .company_info
     %h3.text-uppercase= "#{@business.company_name}"
   .company_contact.address
-    = "#{@business.address}, #{@business.city}, #{@business.state} #{@business.zipcode}"
+    = "#{@business.address}, #{@business.city_state_zipcode}"
   %hr
   %h4 Your Review
   = bootstrap_form_for([@business, @review]) do |f|  
