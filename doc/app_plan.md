@@ -69,7 +69,7 @@ Plan
 - [x] Fix zipcodes to be 5 digits
 - [x] Sessions#destroy
 - [x] Automatically login newly registered user
-- [ ] Show user's reviews
+- [x] Show user's reviews
 - [ ] Create integrated test for registering and sigining in a user
 - [ ] Created integrated test for viewing another user's profile page
 - [ ] Create integrated test for signing out a user
@@ -77,5 +77,3 @@ Plan
 - [ ] Add image upload for profile
 - [ ] user cannot make multiple reviews for one business
 - [ ] Add pagination for business index page
-- [ ] Add tags to businesses?
-- [ ] Create slug for business#show

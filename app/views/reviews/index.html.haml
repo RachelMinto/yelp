@@ -6,7 +6,7 @@
   - @recent_reviews.each do |review|
     .row.profile-review
       .company-info.col-md-3
-        %h4= review.business.company_name
+        %h4= link_to review.business.company_name, business_path(review.business)
         .address
           = review.business.address
           %br/

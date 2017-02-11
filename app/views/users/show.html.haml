@@ -6,3 +6,21 @@
       %br/
       = "#{@user.location}"
       .muted= "#{@user.total_reviews}"
+.padded-column
+  .row
+    %h4.emphasis.col-md-4 Recent Reviews
+  %hr
+  - @user.reviews.each do |review|  
+    .row.profile-review
+      .company-info.col-md-3
+        %h4= link_to review.business.company_name, review.business
+        .address
+          = review.business.address
+          %br/
+          = "#{review.business.city}, #{review.business.state} #{review.business.zipcode}"
+      .user-rating.col-md-7
+        = render partial: 'shared/star_rating_readonly', locals: { rating: review.rating }
+        %span.muted= formatted_date(review.created_at)
+        .review-preview
+          = review.comment
+    %hr
