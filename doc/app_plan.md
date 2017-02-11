@@ -72,7 +72,7 @@ Plan
 - [x] Show user's reviews
 - [x] Create integrated test for registering a user
 - [x] Integrated test for view business index, view business, create a review,
-- [ ] Created integrated test for viewing another user's profile page
+- [x] Created integrated test for viewing another user's profile page
 - [ ] Create integrated test for signing out a user
 - [ ] Make hours say closed if not present and extract to partial
 - [ ] Implement search field
