@@ -8,5 +8,17 @@ class Business < ActiveRecord::Base
     self.reviews.each { |review| sum += review.rating.to_f }
 
     avg = (sum.to_f / reviews.size.to_f).round
-  end           
+  end
+
+  def total_reviews
+    total = reviews.count
+
+    return "No Reviews Yet" if total == 0
+    return "1 Review" if total == 1
+    return "#{total} Reviews" if total > 1   
+  end
+
+  def recent_review_preview
+    reviews.last.comment[0..169] + '...'
+  end
 end

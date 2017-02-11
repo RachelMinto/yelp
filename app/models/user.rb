@@ -16,5 +16,5 @@ class User < ActiveRecord::Base
     return "No Reviews Yet" if total == 0
     return "1 Review" if total == 1
     return "#{total} Reviews" if total > 1   
-  end
+  end  
 end

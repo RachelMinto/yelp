@@ -65,8 +65,10 @@ Plan
 - [x] Review#index
   - [x] create TDD for reviews controller #index
   - [x] create route to reviews #index
+- [x] Show business's latest review on index page.
 - [ ] Fix zipcodes to be 5 digits
 - [ ] Sessions#destroy
+- [ ] Show user's reviews
 - [ ] Create integrated test for registering and sigining in a user
 - [ ] Created integrated test for viewing another user's profile page
 - [ ] Create integrated test for signing out a user
