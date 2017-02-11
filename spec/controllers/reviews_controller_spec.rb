@@ -3,6 +3,13 @@ require 'spec_helper'
 describe ReviewsController do
   let(:business) { Fabricate(:business) }
 
+  describe 'GET index' do
+    it "sets @reviews" do
+      get :index
+      expect(assigns(:recent_reviews)).to be_instance_of(Array)
+    end
+  end
+
   describe 'GET new' do
     context "with unauthenticated user" do
       it_behaves_like "requires_authenticated_user" do

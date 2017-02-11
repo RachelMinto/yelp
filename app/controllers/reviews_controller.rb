@@ -2,7 +2,7 @@ class ReviewsController < ApplicationController
   before_action :require_user, only: [:new, :create]
 
   def index
-
+    @recent_reviews = Review.recent
   end
 
   def new
