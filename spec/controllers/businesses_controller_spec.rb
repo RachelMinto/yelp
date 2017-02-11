@@ -52,4 +52,18 @@ describe BusinessesController do
       end
     end
   end
+
+  describe 'GET show' do
+    let(:business) { Fabricate(:business) }
+
+    it "sets @business" do
+      get :show, id: business.id
+      expect(assigns(:business)).to be_instance_of(Business)
+    end
+
+    it "sets @reviews" do
+      get :show, id: business.id
+      expect(assigns(:business)).to be_instance_of(Business)
+    end    
+  end
 end

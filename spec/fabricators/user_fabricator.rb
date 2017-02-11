@@ -3,5 +3,6 @@ Fabricator(:user) do
   last_name { Faker::Name.last_name }
   email { Faker::Internet.email }
   password { Faker::Internet.password }
-  location { Faker::Address.city + ', ' + Faker::Address.state_abbr }    
+  location { Faker::Address.city + ', ' + Faker::Address.state_abbr }
+  profile_picture { "/images/profile_1.jpg" } 
 end

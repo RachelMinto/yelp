@@ -17,6 +17,11 @@ class BusinessesController < ApplicationController
     end
   end
 
+  def show
+    @business = Business.find(params[:id])
+    @reviews = @business.reviews
+  end
+
   private
 
   def business_params

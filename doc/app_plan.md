@@ -53,10 +53,13 @@ Plan
   - [x] create route to sessions #destroy
 - [x] Create shared_example for requires_authenticated_user 
   - [x] require_authenticated_user to create a business
-- [ ] Review#new
+- [x] Review#new
   - [x] create TDD for reviews controller and model #new
-  - [ ] create route to reviews #new
+  - [x] create route to reviews #new
+  - [x] Clean up reviews count in business show
+  - [x] extract star-rating to method
 - [ ] Review#create
+  - [x] make sure model requires rating and comment
   - [ ] create TDD for reviews controller and model #create
   - [ ] create route to reviews #create
 - [ ] Business#show tests etc.
@@ -66,7 +69,9 @@ Plan
   - [ ] create TDD for reviews controller #show
   - [ ] create route to reviews #show
   - [ ] create route to users #show for each review
+- [ ] Implement search field
 - [ ] Add image upload for profile
+- [ ] user cannot make multiple reviews for one business
 - [ ] Add pagination for business index page
 - [ ] Add tags to businesses?
 - [ ] Add photos to reviews?

@@ -1,0 +1,16 @@
+.btn-group.star-rating.small-rating(data-toggle="buttons")
+  %label.btn.btn-primary.disabled{class: ("active" if rating.to_i == 5)}
+    %input(type="radio" name="5" id="5" value="5")
+    %span.glyphicon.glyphicon-star
+  %label.btn.btn-primary.disabled{class: ("active" if rating.to_i >= 4)}        
+    %input(type="radio" name="5" id="5" value="4")
+    %span.glyphicon.glyphicon-star
+  %label.btn.btn-primary.disabled{class: ("active" if rating.to_i >= 3)}          
+    %input(type="radio" name="5" id="5" value="3")
+    %span.glyphicon.glyphicon-star
+  %label.btn.btn-primary.disabled{class: ("active" if rating.to_i >= 2)}     
+    %input(type="radio" name="5" id="5" value="2")
+    %span.glyphicon.glyphicon-star
+  %label.btn.btn-primary.disabled{class: ("active" if rating.to_i >= 1)}         
+    %input(type="radio" name="5" id="5" value="1")
+    %span.glyphicon.glyphicon-star
