@@ -5,9 +5,9 @@
       = render partial: 'shared/star_rating_readonly', locals: { rating: @business.average_rating }
       %span.muted 42 reviews
     %div.col-md-3
-      .review_button.ybtn
-        %span.glyphicon.glyphicon-star        
-        Write a Review  
+      =link_to new_business_review_path(@business), class: 'review_button ybtn' do
+        %span.glyphicon.glyphicon-star
+        Write a Review
     .company_contact.col-md-3.address
       = @business.address
       %br/

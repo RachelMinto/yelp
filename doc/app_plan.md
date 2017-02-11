@@ -58,21 +58,21 @@ Plan
   - [x] create route to reviews #new
   - [x] Clean up reviews count in business show
   - [x] extract star-rating to method
+- [x] Business#show tests etc. 
 - [ ] Review#create
   - [x] make sure model requires rating and comment
   - [ ] create TDD for reviews controller and model #create
-  - [ ] create route to reviews #create
-- [ ] Business#show tests etc.
 - [ ] Create integrated test for registering and sigining in a user
 - [ ] Created integrated test for viewing another user's profile page
 - [ ] Review#show
   - [ ] create TDD for reviews controller #show
   - [ ] create route to reviews #show
   - [ ] create route to users #show for each review
+- [ ] Sessions#destroy
+- [ ] Create integrated test for signing out a user
 - [ ] Implement search field
 - [ ] Add image upload for profile
 - [ ] user cannot make multiple reviews for one business
 - [ ] Add pagination for business index page
 - [ ] Add tags to businesses?
-- [ ] Add photos to reviews?
 - [ ] Create slug for business#show
