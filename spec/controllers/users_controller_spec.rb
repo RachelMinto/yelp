@@ -10,7 +10,7 @@ describe UsersController do
 
   describe 'POST create' do
     context "with valid inputs" do
-      before { post :create, { :user => Fabricate.attributes_for(:user, first_name: 'Alice') } }
+      before { post :create, user: Fabricate.attributes_for(:user, first_name: 'Alice') }
 
       it "sets @user" do
         expect(assigns(:user)).to be_instance_of(User)
@@ -23,6 +23,10 @@ describe UsersController do
       it "redirects to user#new" do
         expect(response).to redirect_to(root_path)
       end
+
+      it "sets a session id" do
+        expect(session[:user_id]).to_not be_nil
+      end      
 
       it "gives a success message" do
         expect(flash[:success]).to eq('Welcome, Alice')
@@ -42,7 +46,7 @@ describe UsersController do
 
       it "renders user#new" do
         expect(response).to render_template('new')    
-      end      
+      end
     end
   end
 

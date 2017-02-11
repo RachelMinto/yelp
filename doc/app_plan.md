@@ -67,7 +67,8 @@ Plan
   - [x] create route to reviews #index
 - [x] Show business's latest review on index page.
 - [x] Fix zipcodes to be 5 digits
-- [ ] Sessions#destroy
+- [x] Sessions#destroy
+- [x] Automatically login newly registered user
 - [ ] Show user's reviews
 - [ ] Create integrated test for registering and sigining in a user
 - [ ] Created integrated test for viewing another user's profile page

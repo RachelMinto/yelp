@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   root to: "businesses#index"
   get '/register', to: 'users#new', as: :register
   get '/login', to: 'sessions#new', as: :login
+  get '/logout', to: 'sessions#destroy', as: :logout
 
   resources :businesses, only: [:index, :new, :create, :show] do
     resources :reviews, only: [:new, :create]
