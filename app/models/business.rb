@@ -1,5 +1,6 @@
 class Business < ActiveRecord::Base
   validates_presence_of :company_name, :address, :city, :state, :zipcode, :phone
+  validates :zipcode, length: { is: 5 }
   has_many :reviews
 
   def average_rating
