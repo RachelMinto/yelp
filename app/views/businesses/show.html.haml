@@ -1,0 +1,69 @@
+%section.business_show.container
+  .row.business_card
+    .company_info.col-md-6
+      %h3.text-uppercase= "#{@business.company_name}"
+      = render partial: 'shared/star_rating_readonly', locals: { rating: @business.average_rating }
+      %span.muted 42 reviews
+    %div.col-md-3
+      =link_to new_business_review_path(@business), class: 'review_button ybtn' do
+        %span.glyphicon.glyphicon-star
+        Write a Review
+    .company_contact.col-md-3.address
+      = @business.address
+      %br/
+      = "#{@business.city}, #{@business.state} #{@business.zipcode}"
+      %br/      
+      = @business.phone
+.row.padded-column
+  .col-md-9
+    - @reviews.each do |review|
+      - user = review.user
+      %section.row
+        .reviews
+          .row.review-card
+            = profile_pic(user.profile_picture, 1)       
+            .reviewer-info.col-md-3
+              = link_to "#{review.user.first_name_with_last_initial}", user
+              %br/
+              = "#{user.location}"
+              .muted= "#{user.total_reviews}"
+            .user-rating.col-md-7
+              = render partial: 'shared/star_rating_readonly', locals: { rating: review.rating }
+              %span.muted= formatted_date(review.created_at)
+              .review-preview
+                = "#{review.comment}"
+          %hr
+  .company_side-bar.col-md-3
+    .company-details 
+      %h5.emphasis Hours 
+      %table
+        %tr
+          %td Mon
+          %td= "#{@business.mon_start}-#{@business.mon_end}"
+        %tr
+          %td Tue
+          %td= "#{@business.tue_start}-#{@business.tue_end}"
+        %tr
+          %td Wed
+          %td= "#{@business.wed_start}-#{@business.wed_end}"
+        %tr
+          %td Thu
+          %td= "#{@business.thu_start}-#{@business.thu_end}"                
+        %tr
+          %td Fri
+          %td= "#{@business.fri_start}-#{@business.fri_end}"
+        %tr
+          %td Sat
+          %td= "#{@business.sat_start}-#{@business.sat_end}"
+        %tr
+          %td Sun
+          %td= "#{@business.sun_start}-#{@business.sun_end}"        
+    .company-details
+      %h5.emphasis More Business Info
+      %div Bike Parking
+      %span= @business.bike_parking ? "Yes" : "No"
+      %div Credit Cards Accepted
+      %span= @business.credit_cards ? "Yes" : "No"
+      %div Wheel Chair Accessible
+      %span= @business.wheel_chair ? "Yes" : "No"
+

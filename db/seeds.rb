@@ -49,3 +49,9 @@
 # Fabricate(:user, profile_picture: "/images/profile_1.jpg")
 # Fabricate(:user, profile_picture: "/images/profile_1.jpg")
 # Fabricate(:user, profile_picture: "/images/profile_1.jpg")
+
+# alice = Fabricate(:user)
+# Fabricate(:review, business_id: 4, user_id: alice.id)
+
+# bob = Fabricate(:user)
+# Fabricate(:review, business_id: 4, user_id: bob.id)

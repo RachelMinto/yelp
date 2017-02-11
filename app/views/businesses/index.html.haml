@@ -3,7 +3,13 @@
     - @businesses.each do |business|
       .row.business_card
         .company_info.col-md-9
-          %h3.text-uppercase= "#{business.company_name}"
+          %h3= link_to "#{business.company_name}", business_path(business), class: 'text-uppercase' 
+          .btn-group.star-rating(data-toggle="buttons")
+            = render partial: 'shared/star_rating_readonly', locals: { rating: business.average_rating }
+            %span.muted= "#{business.total_reviews}"
+          .review-preview
+            - unless business.reviews.empty?
+              = business.recent_review_preview    
         .company_contact.col-md-3.address
           = "#{business.address}"
           %br/

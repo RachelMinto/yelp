@@ -55,5 +55,17 @@ module ApplicationHelper
       ['Wyoming', 'WY'],
       ['non-USA', 'Other']
     ] 
-  end  
+  end
+
+  def profile_pic(user_photo_url, width)
+    if (user_photo_url)
+      return image_tag("#{user_photo_url}", class: "profile-pic col-md-#{width}")
+    else
+      image_tag("/images/profile-placeholder.png", class: "profile-pic col-md-#{width}")
+    end
+  end
+
+  def formatted_date(date)
+    date.strftime("%m/%d/%Y")
+  end
 end
