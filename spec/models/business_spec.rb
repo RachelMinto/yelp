@@ -7,7 +7,7 @@ describe Business do
   it { should validate_presence_of(:state) }
   it { should validate_presence_of(:zipcode) }
   it { should validate_presence_of(:phone) }
-
+  it { should ensure_length_of(:zipcode).is_equal_to(5) }
   it { should have_many(:reviews) }
 
   context "#average_rating" do

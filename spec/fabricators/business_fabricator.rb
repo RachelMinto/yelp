@@ -3,6 +3,6 @@ Fabricator(:business) do
   address { Faker::Address.street_address }
   city { Faker::Address.city }
   state { Faker::Address.state }
-  zipcode { Faker::Address.zip_code }
+  zipcode { ["07234", "55342", "44321"].sample }
   phone { Faker::PhoneNumber.phone_number }
 end
