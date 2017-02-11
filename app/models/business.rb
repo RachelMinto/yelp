@@ -22,4 +22,8 @@ class Business < ActiveRecord::Base
   def recent_review_preview
     reviews.last.comment[0..169] + '...'
   end
+
+  def hours_given?
+    !!(mon_start && mon_end || tue_start && tue_end || wed_start && wed_end || thu_start && thu_end || fri_start && fri_end || sat_start && sat_end || sun_start && sun_end)
+  end
 end

@@ -60,4 +60,16 @@ describe Business do
       expect(business.recent_review_preview).to eq(review2.comment[0..169] + '...')            
     end
   end
+
+  context "#hours_given?" do
+    it "should return false if no hours were given for business" do
+      business = Fabricate(:business)
+      expect(business.hours_given?).to be(false)
+    end
+
+    it "should return true if at least one day has business hours for start and end given" do
+      business = Fabricate(:business, sun_end: "8:00 PM", sun_start: '12:00 PM')
+      expect(business.hours_given?).to be(true)
+    end    
+  end
 end
