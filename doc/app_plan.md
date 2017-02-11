@@ -73,9 +73,7 @@ Plan
 - [x] Create integrated test for registering a user
 - [x] Integrated test for view business index, view business, create a review,
 - [x] Created integrated test for viewing another user's profile page
-- [ ] Make hours say closed if not present and extract to partial
+- [x] Make hours say closed if not present and extract to partial
 - [ ] Clean up all views' html
-- [ ] Implement search field
-- [ ] Add image upload for profile
+- [ ] remove search field
 - [ ] user cannot make multiple reviews for one business
-- [ ] Add pagination for business index page

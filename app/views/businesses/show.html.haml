@@ -21,7 +21,7 @@
       %section.row
         .reviews
           .row.review-card
-            = profile_pic(user.profile_picture, 1)       
+            = profile_pic(user.profile_picture, 1)
             .reviewer-info.col-md-3
               = link_to "#{review.user.first_name_with_last_initial}", user
               %br/
@@ -34,30 +34,8 @@
                 = "#{review.comment}"
           %hr
   .company_side-bar.col-md-3
-    .company-details 
-      %h5.emphasis Hours 
-      %table
-        %tr
-          %td Mon
-          %td= "#{@business.mon_start}-#{@business.mon_end}"
-        %tr
-          %td Tue
-          %td= "#{@business.tue_start}-#{@business.tue_end}"
-        %tr
-          %td Wed
-          %td= "#{@business.wed_start}-#{@business.wed_end}"
-        %tr
-          %td Thu
-          %td= "#{@business.thu_start}-#{@business.thu_end}"                
-        %tr
-          %td Fri
-          %td= "#{@business.fri_start}-#{@business.fri_end}"
-        %tr
-          %td Sat
-          %td= "#{@business.sat_start}-#{@business.sat_end}"
-        %tr
-          %td Sun
-          %td= "#{@business.sun_start}-#{@business.sun_end}"        
+    - if @business.hours_given?
+      = render partial: 'hours', object: @business  
     .company-details
       %h5.emphasis More Business Info
       %div Bike Parking
