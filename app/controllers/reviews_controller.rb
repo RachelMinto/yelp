@@ -18,7 +18,7 @@ class ReviewsController < ApplicationController
       flash['success'] = 'Review has been created succesfully.'      
       redirect_to @business
     else
-      flash['danger'] = 'There was a problem with your review.'
+      flash.now['danger'] = 'There was a problem with your review.'
       render :new
     end
   end

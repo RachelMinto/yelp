@@ -30,4 +30,32 @@ class Business < ActiveRecord::Base
   def city_state_zipcode
     "#{city}, #{state} #{zipcode}"
   end
+
+  def open_monday?
+    mon_start && mon_end
+  end
+
+  def open_tuesday?
+    tue_start && tue_end
+  end
+
+  def open_wednesday?
+    wed_start && wed_end
+  end
+
+  def open_thursday?
+    thu_start && thu_end
+  end
+
+  def open_friday?
+    fri_start && fri_end
+  end
+
+  def open_saturday?
+    sat_start && sat_end
+  end
+
+  def open_sunday?
+    sun_start && sun_end
+  end
 end

@@ -3,22 +3,22 @@
   %table
     %tr
       %td Mon
-      %td= @business.mon_start && @business.mon_end ? "#{@business.mon_start}-#{@business.mon_end}" : "Closed"
+      %td= @business.open_monday? ? "#{@business.mon_start}-#{@business.mon_end}" : "Closed"
     %tr
       %td Tue
-      %td= @business.tue_start && @business.tue_end ? "#{@business.tue_start}-#{@business.tue_end}" : "Closed"
+      %td= @business.open_tuesday? ? "#{@business.tue_start}-#{@business.tue_end}" : "Closed"
     %tr
       %td Wed
-      %td= @business.wed_start && @business.wed_end ? "#{@business.wed_start}-#{@business.wed_end}" : "Closed"
+      %td= @business.open_wednesday? ? "#{@business.wed_start}-#{@business.wed_end}" : "Closed"
     %tr
       %td Thu
-      %td= @business.thu_start && @business.thu_end ? "#{@business.thu_start}-#{@business.thu_end}" : "Closed"
+      %td= @business.open_thursday? ? "#{@business.thu_start}-#{@business.thu_end}" : "Closed"
     %tr
       %td Fri
-      %td= @business.fri_start && @business.fri_end ? "#{@business.fri_start}-#{@business.fri_end}" : "Closed"
+      %td= @business.open_friday? ? "#{@business.fri_start}-#{@business.fri_end}" : "Closed"
     %tr
       %td Sat
-      %td= @business.sat_start && @business.sat_end ? "#{@business.sat_start}-#{@business.sat_end}" : "Closed"
+      %td= @business.open_saturday? ? "#{@business.sat_start}-#{@business.sat_end}" : "Closed"
     %tr
       %td Sun
-      %td= @business.sun_start && @business.sun_end ? "#{@business.sun_start}-#{@business.sun_end}" : "Closed"
+      %td= @business.open_sunday? ? "#{@business.sun_start}-#{@business.sun_end}" : "Closed"
