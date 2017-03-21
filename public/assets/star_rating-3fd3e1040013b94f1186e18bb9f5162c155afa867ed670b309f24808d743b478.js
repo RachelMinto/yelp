@@ -1,0 +1,1 @@
+$(function(){$("label.btn.btn-primary.disabled").click(function(){return!1})});
