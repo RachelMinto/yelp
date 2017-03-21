@@ -1,5 +1,5 @@
 # Be sure to restart your server when you modify this file.
-Rails.application.config.assets.precompile += %w( bootstrap-sprockets.js )
+Rails.application.config.assets.precompile += %w( star-rating.js bootstrap-sprockets.js )
 
 # Version of your assets, change this if you want to expire all your assets.
 Rails.application.config.assets.version = '1.0'
