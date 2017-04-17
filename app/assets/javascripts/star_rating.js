@@ -1,5 +1,5 @@
 $(function() {
-  $("label.btn.btn-primary.disabled").click(function(e) {
+  $("label.btn.btn-primary.disabled").on("click", function(e) {
     return false
   });
 });

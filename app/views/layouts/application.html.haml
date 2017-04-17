@@ -6,7 +6,7 @@
     %meta(name="viewport" content="width=device-width, initial-scale=1.0")
     = csrf_meta_tag
     = stylesheet_link_tag "application"
-    = javascript_include_tag "application"
+    
   %body
     %header
       = render 'shared/header'
@@ -14,6 +14,7 @@
       = render 'shared/messages'
       = yield
     %footer
+      = javascript_include_tag "application"
       = image_tag("/images/footer_cityscape.png")
       .footer-copyright.muted
         No copyright © 2004–2017 Yelp Inc. Yelp, Yelp logo, Yelp burst and related marks are registered trademarks of Yelp.
