@@ -15,9 +15,3 @@
 //= require turbolinks
 //= require bootstrap-sprockets
 //= require_tree .
-
-$(function() {
-  $("label.btn.btn-primary.disabled").click(function(e) {
-    return false
-  });
-});
