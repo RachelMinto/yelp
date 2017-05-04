@@ -8,7 +8,7 @@ class Business < ActiveRecord::Base
     sum = 0
     self.reviews.each { |review| sum += review.rating.to_f }
 
-    avg = (sum.to_f / reviews.size.to_f).round
+    (sum.to_f / reviews.size.to_f).round
   end
 
   def total_reviews
